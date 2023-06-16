@@ -1,18 +1,19 @@
-package bank;
+package org.example;
 
 public class Account {
+
     private int id;
     private String type;
     private double balance;
 
     public Account(int id, String type, double balance) {
-        this.id = id;
-        this.type = type;
-        this.balance = balance;
+        setId(id);
+        setType(type);
+        setBalance(balance);
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(int id) {
@@ -20,7 +21,7 @@ public class Account {
     }
 
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {
@@ -28,10 +29,11 @@ public class Account {
     }
 
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
 
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
 }
