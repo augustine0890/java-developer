@@ -1,4 +1,4 @@
-package main.java;
+package bank;
 
 public class Customer {
     private int id;
